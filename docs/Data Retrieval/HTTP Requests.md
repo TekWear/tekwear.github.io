@@ -25,4 +25,5 @@ searches for forms submitted to the database after the provided date.
 ### URL Query Parameters
 + dateFrom, dateTo
   
-  Date searches use dateFrom and dateTo, each value a string in ISO 8601 extended format, UTC.  The dates are compared against the database creation time of the records rather than the time the record was captured in the field.
+  Date searches use dateFrom and dateTo, each value a string in ISO 8601 extended format, UTC.  The dates are compared against the database creation time of the records rather than the time the record was captured in the field.  Note that `dateFrom` is inclusive (records with 
+this time are included), while `dateTo` is exclusive.
