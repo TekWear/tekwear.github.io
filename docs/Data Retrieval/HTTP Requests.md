@@ -6,7 +6,7 @@ sidebar_position: 2
 
 Requests should be addressed to this base URL:
 
-`https://data.agvoiceglobal.io/form`
+`https://data.prod.agvoiceglobal.com/form`
 
 ## Authentication
 
@@ -14,11 +14,11 @@ Use HTTP Basic Authentication.  You should have received a username and password
 
 ## GET
 
-Use HTTP method GET to do any sort of fetch, including filtered gets (queries). A get by ID requires the ID in the path. For example `GET https://data.agvoiceglobal.io/form/12345678` will get the form with ID 12345678.
+Use HTTP method GET to do any sort of fetch, including filtered gets (queries). A get by ID requires the ID in the path. For example `GET https://data.prod.agvoiceglobal.com/form/12345678` will get the form with ID 12345678.
 
 A GET without an ID is a search whose filters appear as query strings in the URL.  For example,
 ```
-GET https://data.agvoiceglobal.io/form?dateFrom=2021-12-22T16:20:40.789Z
+GET https://data.prod.agvoiceglobal.com/form?dateFrom=2021-12-22T16:20:40.789Z
 ```
 searches for forms submitted to the database after the provided date.
 
